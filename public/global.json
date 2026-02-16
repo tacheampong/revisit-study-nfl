@@ -5,6 +5,7 @@
     "tutorial-replication",
     "demo-html",
     "demo-html-input",
+    "demo-nfl-test",
     "demo-screen-recording",
     "demo-survey",
     "demo-training",
@@ -69,6 +70,9 @@
     },
     "demo-html-input": {
       "path": "demo-html-input/config.json"
+    },
+    "demo-nfl-test":{
+      "path": "demo-nfl-test/config.json"
     },
     "demo-survey": {
       "path": "demo-survey/config.json"
