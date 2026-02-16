@@ -1,0 +1,249 @@
+{
+  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.3.2/src/parser/StudyConfigSchema.json",
+  "studyMetadata": {
+    "title": "Passing Data from reVISit to HTML and back",
+    "version": "pilot",
+    "authors": ["The reVISit Team"],
+    "date": "2023-04-14",
+    "description": "A demo of how to pass visualization data from reVISit to HTML and send user answers from HTML back to the reVISit.",
+    "organizations": ["University of Utah", "WPI", "University of Toronto"]
+  },
+  "uiConfig": {
+    "contactEmail": "contact@revisit.dev",
+    "helpTextPath": "demo-html-input/assets/help.md",
+    "logoPath": "revisitAssets/revisitLogoSquare.svg",
+    "withProgressBar": true,
+    "autoDownloadStudy": false,
+    "autoDownloadTime": 5000,
+    "withSidebar": false
+  },
+  "baseComponents": {
+    "vertical-bar-chart": {
+      "type": "website",
+      "response": [
+        {
+          "id": "verticalBarChart",
+          "prompt": "Type your answer:",
+          "location": "belowStimulus",
+          "type": "numerical"
+        }
+      ],
+      "path": "demo-nfl-test/assets/vertical-bar-chart-interaction.html",
+      "instructionLocation": "aboveStimulus"
+    }
+  },
+  "components": {
+    "introduction": {
+      "type": "markdown",
+      "path": "demo-nfl-test/assets/introduction.md",
+      "response": []
+    },
+    "vertical-bar-chart-1": {
+      "baseComponent": "vertical-bar-chart",
+      "description": "A trial for the user to enter the difference between the bars",
+      "instruction": "Enter the the difference between the bars",
+      "parameters": {
+        "barData": [
+          {
+            "game_id": "2023_12_WAS_DAL",
+            "team": "DAL",
+            "score": 45,
+            "true_percentage": "22",
+            "bin": "low",
+            "rand": "0.000416536",
+            "chartType": "Vbar"
+          },
+          {
+            "game_id": "2023_12_WAS_DAL",
+            "team": "WAS",
+            "score": 10,
+            "true_percentage": "22",
+            "bin": "low",
+            "rand": "0.000416536",
+            "chartType": "Vbar"
+          }
+        ]
+      }
+    },
+
+    "vertical-bar-chart-2": {
+      "baseComponent": "vertical-bar-chart",
+      "description": "A trial for the user to enter the difference between the bars",
+      "instruction": "Enter the the difference between the bars",
+      "parameters": {
+        "barData": [
+          {
+            "game_id": "2021_09_NE_CAR",
+            "team": "CAR",
+            "score": 6,
+            "true_percentage": "25",
+            "bin": "low",
+            "rand": "0.003697348",
+            "chartType": "Vbar"
+          },
+          {
+            "game_id": "2021_09_NE_CAR",
+            "team": "NE",
+            "score": 24,
+            "true_percentage": "25",
+            "bin": "low",
+            "rand": "0.003697348",
+            "chartType": "Vbar"
+          }
+        ]
+      }
+    },
+    "vertical-bar-chart-3": {
+      "baseComponent": "vertical-bar-chart",
+      "description": "A trial for the user to enter the difference between the bars",
+      "instruction": "Enter the the difference between the bars",
+      "parameters": {
+        "barData": [
+          {
+            "game_id": "2018_01_SF_MIN",
+            "team": "MIN",
+            "score": 24,
+            "true_percentage": "67",
+            "bin": "medium",
+            "rand": "0.001576596",
+            "chartType": "Vbar"
+          },
+          {
+            "game_id": "2018_01_SF_MIN",
+            "team": "SF",
+            "score": 16,
+            "true_percentage": "67",
+            "bin": "medium",
+            "rand": "0.001576596",
+            "chartType": "Vbar"
+          }
+        ]
+      }
+    },
+
+    "vertical-bar-chart-4": {
+      "baseComponent": "vertical-bar-chart",
+      "description": "A trial for the user to enter the difference between the bars",
+      "instruction": "Enter the the difference between the bars",
+      "parameters": {
+        "barData": [
+          {
+            "game_id": "2023_18_CLE_CIN",
+            "team": "CIN",
+            "score": 31,
+            "true_percentage": "45",
+            "bin": "medium",
+            "rand": "0.002983175",
+            "chartType": "Vbar"
+          },
+          {
+            "game_id": "2023_18_CLE_CIN",
+            "team": "CLE",
+            "score": 14,
+            "true_percentage": "45",
+            "bin": "medium",
+            "rand": "0.002983175",
+            "chartType": "Vbar"
+          }
+        ]
+      }
+    },
+
+    "vertical-bar-chart-5": {
+      "baseComponent": "vertical-bar-chart",
+      "description": "A trial for the user to enter the difference between the bars",
+      "instruction": "Enter the the difference between the bars",
+      "parameters": {
+        "barData": [
+          {
+            "game_id": "2023_16_BAL_SF",
+            "team": "SF",
+            "score": 19,
+            "true_percentage": "58",
+            "bin": "medium",
+            "rand": "0.003580825",
+            "chartType": "Vbar"
+          },
+          {
+            "game_id": "2023_16_BAL_SF",
+            "team": "BAL",
+            "score": 33,
+            "true_percentage": "58",
+            "bin": "medium",
+            "rand": "0.003580825",
+            "chartType": "Vbar"
+          }
+        ]
+      }
+    },
+
+    "vertical-bar-chart-6": {
+      "baseComponent": "vertical-bar-chart",
+      "description": "A trial for the user to enter the difference between the bars",
+      "instruction": "Enter the the difference between the bars",
+      "parameters": {
+        "barData": [
+          {
+            "game_id": "2021_14_PIT_MIN",
+            "team": "MIN",
+            "score": 36,
+            "true_percentage": "78",
+            "bin": "high",
+            "rand": "0.004169868",
+            "chartType": "Vbar"
+          },
+          {
+            "game_id": "2021_14_PIT_MIN",
+            "team": "PIT",
+            "score": 28,
+            "true_percentage": "78",
+            "bin": "high",
+            "rand": "0.004169868",
+            "chartType": "Vbar"
+          }
+        ]
+      }
+    },
+
+    "vertical-bar-chart-7": {
+      "baseComponent": "vertical-bar-chart",
+      "description": "A trial for the user to enter the difference between the bars",
+      "instruction": "Enter the the difference between the bars",
+      "parameters": {
+        "barData": [
+          {
+            "game_id": "2018_04_PHI_TEN",
+            "team": "TEN",
+            "score": 26,
+            "true_percentage": "88",
+            "bin": "high",
+            "rand": "0.005662266",
+            "chartType": "Vbar"
+          },
+          {
+            "game_id": "2018_04_PHI_TEN",
+            "team": "PHI",
+            "score": 23,
+            "true_percentage": "88",
+            "bin": "high",
+            "rand": "0.005662266",
+            "chartType": "Vbar"
+          }
+        ]
+      }
+    }
+  },
+  "sequence": {
+    "order": "random",
+    "components": [
+      "introduction",
+      "vertical-bar-chart-1",
+      "vertical-bar-chart-2",
+      "vertical-bar-chart-3",
+      "vertical-bar-chart-4",
+      "vertical-bar-chart-5",
+      "vertical-bar-chart-6",
+      "vertical-bar-chart-7"
+    ]
+  }
+}
