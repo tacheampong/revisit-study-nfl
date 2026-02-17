@@ -1,11 +1,11 @@
 {
   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.3.2/src/parser/StudyConfigSchema.json",
   "studyMetadata": {
-    "title": "Calculate the Difference Between the Teams",
+    "title": "Calculate the Percentage Difference Between the Footbal Teams",
     "version": "pilot",
     "authors": ["TSS"],
     "date": "2026-02-17",
-    "description": "A test on calculating the difference between bars.",
+    "description": "A test on calculating the percetage difference between teams.",
     "organizations": ["University of Utah", "WPI", "University of Toronto"]
   },
   "uiConfig": {
