@@ -1,0 +1,90 @@
+<!--Header and line to see if d3 is loaded was copied exactly from a2-->
+<!DOCTYPE html>
+<div id="container"></div>
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script type="module">
+
+  console.log(d3); // test if d3 is loaded
+
+    // Used https://observablehq.com/@d3/horizontal-bar-chart/2 for reference on horizontal bar charts
+    // chart dimensions
+    const width = 928;
+    const height = 560;
+    const marginTop = 20;
+    const marginRight = 200;
+    const marginBottom = 90;
+    const marginLeft = 80;
+
+    const data=[
+        {team: "A", score:38},
+        {team: "B", score:10}
+    ];
+
+    const x = d3.scaleLinear()
+        .domain([0,50])
+        .range([marginLeft, width - marginRight]);
+
+    const y = d3.scaleBand()
+        .domain(["A", "B"])
+        .range([marginTop, height - marginBottom])
+        .padding(0.5);
+
+    // Add an SVG
+    const svg = d3.create("svg")
+        .attr("width", width)
+        .attr("height", height)
+    
+    svg.append("rect")
+        .attr("width", width)
+        .attr("height", height)
+        .attr("fill", "white");
+
+    svg.append("g") 
+            .attr("fill", "none")
+            .attr("stroke", "black")
+        .selectAll("rect")
+        .data(data)
+        .join("rect")
+            .attr("x", marginLeft)
+            .attr("y", (d)=>y(d.team))
+            .attr("width", (d)=>x(d.score)-marginLeft)
+            .attr("height", y.bandwidth());
+
+    // X-axis
+    svg.append("g")
+        // Ticks and labels
+        .attr("transform", `translate(0, ${height - marginBottom})`)
+        .call(d3.axisBottom(x).tickValues([0,50]).tickSizeOuter(0))
+
+        // Title
+        .call(g => g.append("text")
+            .attr("fill", "#000")
+            .attr("x", (width - marginLeft - marginRight) / 2 + marginLeft)
+            .attr("y", 50)
+            .attr("text-anchor", "middle")
+            .attr("font-size", 20)
+            .text("Score"));
+
+    // Y-axis
+    svg.append("g")
+        // Ticks and labels
+        .attr("transform", `translate(${marginLeft}, 0)`)
+        .call(d3.axisLeft(y).tickSize(0))
+        .call(g => g.select(".domain"))
+
+        // Title
+        .call(g => g.append("text")
+            .attr("fill", "#000")
+            .attr("transform", "rotate(-90)")
+            .attr("x", -(height - marginTop - marginBottom) / 2 - marginTop)
+            .attr("y", -50)
+            .attr("text-anchor", "middle")
+            .attr("font-size", 20)
+            .text("Team"));
+
+        // Add SVG to page
+        document.getElementById("container").appendChild(svg.node());
+
+</script>
+</body>
+</hmtl>
