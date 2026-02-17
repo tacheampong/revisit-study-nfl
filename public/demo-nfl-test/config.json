@@ -203,7 +203,7 @@
       "instruction": "Enter the percentage difference between the bars rounded to the nearest whole number",
        "correctAnswer": [{
         "id": "vertical-6",
-        "answer": 36 
+        "answer": 78 
       }],
       "parameters": {
         "barData": [
@@ -235,7 +235,7 @@
       "instruction": "Enter the percentage difference between the bars rounded to the nearest whole number",
        "correctAnswer": [{
         "id": "vertical-7",
-        "answer": 26 
+        "answer": 88 
       }],
       "parameters": {
         "barData": [
