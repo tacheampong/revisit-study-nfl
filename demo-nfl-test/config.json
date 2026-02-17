@@ -262,16 +262,22 @@
     }
   },
   "sequence": {
-    "order": "random",
+    "order": "fixed",
     "components": [
       "introduction",
-      "vertical-bar-chart-1",
-      "vertical-bar-chart-2",
-      "vertical-bar-chart-3",
-      "vertical-bar-chart-4",
-      "vertical-bar-chart-5",
-      "vertical-bar-chart-6",
-      "vertical-bar-chart-7"
+      {
+        "id": "block_1",
+        "order": "random",
+        "components": [
+        "vertical-bar-chart-1",
+        "vertical-bar-chart-2",
+        "vertical-bar-chart-3",
+        "vertical-bar-chart-4",
+        "vertical-bar-chart-5",
+        "vertical-bar-chart-6",
+        "vertical-bar-chart-7"
+        ]
+      }
     ]
   }
 }
