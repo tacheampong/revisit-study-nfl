@@ -41,7 +41,11 @@
     "horizontal-bar-chart-1": {
       "baseComponent": "horizontal-bar-chart",
       "description": "A trial for the user to enter the difference between the bars",
-      "instruction": "Enter the the difference between the bars",
+      "instruction": "Enter the percentage difference between the bars (rounded to the nearest whole number)",
+      "correctAnswer": [{
+        "id":"horizontal-1",
+        "answer": 20
+      }],
       "parameters": {
         "barData": [
           {
@@ -69,7 +73,11 @@
     "horizontal-bar-chart-2": {
       "baseComponent": "horizontal-bar-chart",
       "description": "A trial for the user to enter the difference between the bars",
-      "instruction": "Enter the the difference between the bars",
+      "instruction": "Enter the percentage difference between the bars (rounded to the nearest whole number)",
+      "correctAnswer": [{
+        "id":"horizontal-2",
+        "answer": 26
+      }],
       "parameters": {
         "barData": [
           {
@@ -96,7 +104,11 @@
     "horizontal-bar-chart-3": {
       "baseComponent": "horizontal-bar-chart",
       "description": "A trial for the user to enter the difference between the bars",
-      "instruction": "Enter the the difference between the bars",
+      "instruction": "Enter the percentage difference between the bars (rounded to the nearest whole number)",
+      "correctAnswer": [{
+        "id":"horizontal-3",
+        "answer": 65
+      }],
       "parameters": {
         "barData": [
           {
@@ -124,7 +136,11 @@
     "horizontal-bar-chart-4": {
       "baseComponent": "horizontal-bar-chart",
       "description": "A trial for the user to enter the difference between the bars",
-      "instruction": "Enter the the difference between the bars",
+      "instruction": "Enter the percentage difference between the bars (rounded to the nearest whole number)",
+      "correctAnswer": [{
+        "id":"horizontal-4",
+        "answer": 38
+      }],
       "parameters": {
         "barData": [
           {
@@ -152,7 +168,11 @@
     "horizontal-bar-chart-5": {
       "baseComponent": "horizontal-bar-chart",
       "description": "A trial for the user to enter the difference between the bars",
-      "instruction": "Enter the the difference between the bars",
+      "instruction": "Enter the percentage difference between the bars (rounded to the nearest whole number)",
+      "correctAnswer": [{
+        "id":"horizontal-5",
+        "answer": 39
+      }],
       "parameters": {
         "barData": [
           {
@@ -180,7 +200,11 @@
     "horizontal-bar-chart-6": {
       "baseComponent": "horizontal-bar-chart",
       "description": "A trial for the user to enter the difference between the bars",
-      "instruction": "Enter the the difference between the bars",
+      "instruction": "Enter the percentage difference between the bars (rounded to the nearest whole number)",
+      "correctAnswer": [{
+        "id":"horizontal-6",
+        "answer": 76
+      }],
       "parameters": {
         "barData": [
           {
@@ -208,7 +232,11 @@
     "horizontal-bar-chart-7": {
       "baseComponent": "horizontal-bar-chart",
       "description": "A trial for the user to enter the difference between the bars",
-      "instruction": "Enter the the difference between the bars",
+      "instruction": "Enter the percentage difference between the bars (rounded to the nearest whole number)",
+      "correctAnswer": [{
+        "id":"horizontal-7",
+        "answer": 89
+      }],
       "parameters": {
         "barData": [
           {
