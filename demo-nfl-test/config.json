@@ -1,11 +1,11 @@
 {
   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.3.2/src/parser/StudyConfigSchema.json",
   "studyMetadata": {
-    "title": "Passing Data from reVISit to HTML and back",
+    "title": "Calculate the Difference Between the Teams",
     "version": "pilot",
-    "authors": ["The reVISit Team"],
-    "date": "2023-04-14",
-    "description": "A demo of how to pass visualization data from reVISit to HTML and send user answers from HTML back to the reVISit.",
+    "authors": ["TSS"],
+    "date": "2026-02-17",
+    "description": "A test on calculating the difference between bars.",
     "organizations": ["University of Utah", "WPI", "University of Toronto"]
   },
   "uiConfig": {
@@ -41,12 +41,16 @@
     "vertical-bar-chart-1": {
       "baseComponent": "vertical-bar-chart",
       "description": "A trial for the user to enter the difference between the bars",
-      "instruction": "Enter the the difference between the bars",
+      "instruction": "Enter the percentage difference between the bars rounded to the nearest whole number",
+      "correctAnswer": [{
+        "id": "vertical-1",
+        "answer": 22 
+      }],
       "parameters": {
         "barData": [
           {
             "game_id": "2023_12_WAS_DAL",
-            "team": "DAL",
+            "team": "A",
             "score": 45,
             "true_percentage": "22",
             "bin": "low",
@@ -55,7 +59,7 @@
           },
           {
             "game_id": "2023_12_WAS_DAL",
-            "team": "WAS",
+            "team": "B",
             "score": 10,
             "true_percentage": "22",
             "bin": "low",
@@ -69,12 +73,16 @@
     "vertical-bar-chart-2": {
       "baseComponent": "vertical-bar-chart",
       "description": "A trial for the user to enter the difference between the bars",
-      "instruction": "Enter the the difference between the bars",
+      "instruction": "Enter the percentage difference between the bars rounded to the nearest whole number",
+       "correctAnswer": [{
+        "id": "vertical-2",
+        "answer": 25 
+      }],
       "parameters": {
         "barData": [
           {
             "game_id": "2021_09_NE_CAR",
-            "team": "CAR",
+            "team": "A",
             "score": 6,
             "true_percentage": "25",
             "bin": "low",
@@ -83,7 +91,7 @@
           },
           {
             "game_id": "2021_09_NE_CAR",
-            "team": "NE",
+            "team": "B",
             "score": 24,
             "true_percentage": "25",
             "bin": "low",
@@ -96,12 +104,16 @@
     "vertical-bar-chart-3": {
       "baseComponent": "vertical-bar-chart",
       "description": "A trial for the user to enter the difference between the bars",
-      "instruction": "Enter the the difference between the bars",
+      "instruction": "Enter the percentage difference between the bars rounded to the nearest whole number",
+       "correctAnswer": [{
+        "id": "vertical-3",
+        "answer": 67 
+      }],
       "parameters": {
         "barData": [
           {
             "game_id": "2018_01_SF_MIN",
-            "team": "MIN",
+            "team": "A",
             "score": 24,
             "true_percentage": "67",
             "bin": "medium",
@@ -110,7 +122,7 @@
           },
           {
             "game_id": "2018_01_SF_MIN",
-            "team": "SF",
+            "team": "B",
             "score": 16,
             "true_percentage": "67",
             "bin": "medium",
@@ -124,12 +136,16 @@
     "vertical-bar-chart-4": {
       "baseComponent": "vertical-bar-chart",
       "description": "A trial for the user to enter the difference between the bars",
-      "instruction": "Enter the the difference between the bars",
+      "instruction": "Enter the percentage difference between the bars rounded to the nearest whole number",
+       "correctAnswer": [{
+        "id": "vertical-4",
+        "answer": 45
+      }],
       "parameters": {
         "barData": [
           {
             "game_id": "2023_18_CLE_CIN",
-            "team": "CIN",
+            "team": "A",
             "score": 31,
             "true_percentage": "45",
             "bin": "medium",
@@ -138,7 +154,7 @@
           },
           {
             "game_id": "2023_18_CLE_CIN",
-            "team": "CLE",
+            "team": "B",
             "score": 14,
             "true_percentage": "45",
             "bin": "medium",
@@ -152,12 +168,16 @@
     "vertical-bar-chart-5": {
       "baseComponent": "vertical-bar-chart",
       "description": "A trial for the user to enter the difference between the bars",
-      "instruction": "Enter the the difference between the bars",
+      "instruction": "Enter the percentage difference between the bars rounded to the nearest whole number",
+       "correctAnswer": [{
+        "id": "vertical-5",
+        "answer": 58 
+      }],
       "parameters": {
         "barData": [
           {
             "game_id": "2023_16_BAL_SF",
-            "team": "SF",
+            "team": "A",
             "score": 19,
             "true_percentage": "58",
             "bin": "medium",
@@ -166,7 +186,7 @@
           },
           {
             "game_id": "2023_16_BAL_SF",
-            "team": "BAL",
+            "team": "B",
             "score": 33,
             "true_percentage": "58",
             "bin": "medium",
@@ -180,12 +200,16 @@
     "vertical-bar-chart-6": {
       "baseComponent": "vertical-bar-chart",
       "description": "A trial for the user to enter the difference between the bars",
-      "instruction": "Enter the the difference between the bars",
+      "instruction": "Enter the percentage difference between the bars rounded to the nearest whole number",
+       "correctAnswer": [{
+        "id": "vertical-6",
+        "answer": 36 
+      }],
       "parameters": {
         "barData": [
           {
             "game_id": "2021_14_PIT_MIN",
-            "team": "MIN",
+            "team": "A",
             "score": 36,
             "true_percentage": "78",
             "bin": "high",
@@ -194,7 +218,7 @@
           },
           {
             "game_id": "2021_14_PIT_MIN",
-            "team": "PIT",
+            "team": "B",
             "score": 28,
             "true_percentage": "78",
             "bin": "high",
@@ -208,12 +232,16 @@
     "vertical-bar-chart-7": {
       "baseComponent": "vertical-bar-chart",
       "description": "A trial for the user to enter the difference between the bars",
-      "instruction": "Enter the the difference between the bars",
+      "instruction": "Enter the percentage difference between the bars rounded to the nearest whole number",
+       "correctAnswer": [{
+        "id": "vertical-7",
+        "answer": 26 
+      }],
       "parameters": {
         "barData": [
           {
             "game_id": "2018_04_PHI_TEN",
-            "team": "TEN",
+            "team": "A",
             "score": 26,
             "true_percentage": "88",
             "bin": "high",
@@ -222,7 +250,7 @@
           },
           {
             "game_id": "2018_04_PHI_TEN",
-            "team": "PHI",
+            "team": "B",
             "score": 23,
             "true_percentage": "88",
             "bin": "high",
