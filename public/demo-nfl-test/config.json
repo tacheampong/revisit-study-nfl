@@ -47,7 +47,7 @@
         "answer": 11
       }],
       "parameters": {
-        "pueData": [
+        "barData": [
           {
             "game_id": "2023_03_TEN_CLE",
             "team": "A",
@@ -79,7 +79,7 @@
         "answer": 12
       }],
       "parameters": {
-        "pieData": [
+        "barData": [
           {
             "game_id": "2021_07_CAR_NYG",
             "team": "A",
@@ -110,7 +110,7 @@
         "answer": 32
       }],
       "parameters": {
-        "pieData": [
+        "barData": [
           {
             "game_id": "2023_15_DAL_BUF",
             "team": "A",
@@ -142,7 +142,7 @@
         "answer": 47
       }],
       "parameters": {
-        "pieData": [
+        "barData": [
           {
             "game_id": "2020_06_DET_JAX",
             "team": "A",
@@ -174,7 +174,7 @@
         "answer": 55
       }],
       "parameters": {
-        "pieData": [
+        "barData": [
           {
             "game_id": "2022_18_NYJ_MIA",
             "team": "A",
@@ -206,7 +206,7 @@
         "answer": 85
       }],
       "parameters": {
-        "pieData": [
+        "barData": [
           {
             "game_id": "2023_06_DAL_LAC",
             "team": "A",
@@ -238,7 +238,7 @@
         "answer": 90
       }],
       "parameters": {
-        "pieData": [
+        "barData": [
           {
             "game_id": "2018_02_DET_SF",
             "team": "A",
