@@ -30,6 +30,19 @@
       ],
       "path": "demo-nfl-test/assets/vertical-bar-chart-interaction.html",
       "instructionLocation": "aboveStimulus"
+    },
+    "horizontal-bar-chart": {
+      "type": "website",
+      "response": [
+        {
+          "id": "horizontalBarChart",
+          "prompt": "Type your answer:",
+          "location": "belowStimulus",
+          "type": "numerical"
+        }
+      ],
+      "path": "demo-nfl-test/assets/horizontal-bar-chart-interaction.html",
+      "instructionLocation": "aboveStimulus"
     }
   },
   "components": {
@@ -41,11 +54,13 @@
     "vertical-bar-chart-1": {
       "baseComponent": "vertical-bar-chart",
       "description": "A trial for the user to enter the difference between the bars",
-      "instruction": "Enter the percentage difference between the bars rounded to the nearest whole number",
-      "correctAnswer": [{
-        "id": "vertical-1",
-        "answer": 22 
-      }],
+      "instruction": "Enter the percentage difference between the bars (rounded to the nearest whole number)",
+      "correctAnswer": [
+        {
+          "id": "vertical-1",
+          "answer": 22
+        }
+      ],
       "parameters": {
         "barData": [
           {
@@ -73,11 +88,13 @@
     "vertical-bar-chart-2": {
       "baseComponent": "vertical-bar-chart",
       "description": "A trial for the user to enter the difference between the bars",
-      "instruction": "Enter the percentage difference between the bars rounded to the nearest whole number",
-       "correctAnswer": [{
-        "id": "vertical-2",
-        "answer": 25 
-      }],
+      "instruction": "Enter the percentage difference between the bars (rounded to the nearest whole number)",
+      "correctAnswer": [
+        {
+          "id": "vertical-2",
+          "answer": 25
+        }
+      ],
       "parameters": {
         "barData": [
           {
@@ -104,11 +121,13 @@
     "vertical-bar-chart-3": {
       "baseComponent": "vertical-bar-chart",
       "description": "A trial for the user to enter the difference between the bars",
-      "instruction": "Enter the percentage difference between the bars rounded to the nearest whole number",
-       "correctAnswer": [{
-        "id": "vertical-3",
-        "answer": 67 
-      }],
+      "instruction": "Enter the percentage difference between the bars (rounded to the nearest whole number)",
+      "correctAnswer": [
+        {
+          "id": "vertical-3",
+          "answer": 67
+        }
+      ],
       "parameters": {
         "barData": [
           {
@@ -136,11 +155,13 @@
     "vertical-bar-chart-4": {
       "baseComponent": "vertical-bar-chart",
       "description": "A trial for the user to enter the difference between the bars",
-      "instruction": "Enter the percentage difference between the bars rounded to the nearest whole number",
-       "correctAnswer": [{
-        "id": "vertical-4",
-        "answer": 45
-      }],
+      "instruction": "Enter the percentage difference between the bars (rounded to the nearest whole number)",
+      "correctAnswer": [
+        {
+          "id": "vertical-4",
+          "answer": 45
+        }
+      ],
       "parameters": {
         "barData": [
           {
@@ -168,11 +189,13 @@
     "vertical-bar-chart-5": {
       "baseComponent": "vertical-bar-chart",
       "description": "A trial for the user to enter the difference between the bars",
-      "instruction": "Enter the percentage difference between the bars rounded to the nearest whole number",
-       "correctAnswer": [{
-        "id": "vertical-5",
-        "answer": 58 
-      }],
+      "instruction": "Enter the percentage difference between the bars (rounded to the nearest whole number)",
+      "correctAnswer": [
+        {
+          "id": "vertical-5",
+          "answer": 58
+        }
+      ],
       "parameters": {
         "barData": [
           {
@@ -200,11 +223,13 @@
     "vertical-bar-chart-6": {
       "baseComponent": "vertical-bar-chart",
       "description": "A trial for the user to enter the difference between the bars",
-      "instruction": "Enter the percentage difference between the bars rounded to the nearest whole number",
-       "correctAnswer": [{
-        "id": "vertical-6",
-        "answer": 78 
-      }],
+      "instruction": "Enter the percentage difference between the bars (rounded to the nearest whole number)",
+      "correctAnswer": [
+        {
+          "id": "vertical-6",
+          "answer": 78
+        }
+      ],
       "parameters": {
         "barData": [
           {
@@ -232,11 +257,13 @@
     "vertical-bar-chart-7": {
       "baseComponent": "vertical-bar-chart",
       "description": "A trial for the user to enter the difference between the bars",
-      "instruction": "Enter the percentage difference between the bars rounded to the nearest whole number",
-       "correctAnswer": [{
-        "id": "vertical-7",
-        "answer": 88 
-      }],
+      "instruction": "Enter the percentage difference between the bars (rounded to the nearest whole number)",
+      "correctAnswer": [
+        {
+          "id": "vertical-7",
+          "answer": 88
+        }
+      ],
       "parameters": {
         "barData": [
           {
@@ -259,6 +286,242 @@
           }
         ]
       }
+    },
+    "horizontal-bar-chart-1": {
+      "baseComponent": "horizontal-bar-chart",
+      "description": "A trial for the user to enter the difference between the bars",
+      "instruction": "Enter the percentage difference between the bars (rounded to the nearest whole number)",
+      "correctAnswer": [
+        {
+          "id": "horizontal-1",
+          "answer": 20
+        }
+      ],
+      "parameters": {
+        "barData": [
+          {
+            "game_id": "2022_14_TB_SF",
+            "team": "A",
+            "score": 35,
+            "true_percentage": "20",
+            "bin": "low",
+            "rand": "0.005735958",
+            "chartType": "Hbar"
+          },
+          {
+            "game_id": "2022_14_TB_SF",
+            "team": "B",
+            "score": 7,
+            "true_percentage": "20",
+            "bin": "low",
+            "rand": "0.005735958",
+            "chartType": "Hbar"
+          }
+        ]
+      }
+    },
+
+    "horizontal-bar-chart-2": {
+      "baseComponent": "horizontal-bar-chart",
+      "description": "A trial for the user to enter the difference between the bars",
+      "instruction": "Enter the percentage difference between the bars (rounded to the nearest whole number)",
+      "correctAnswer": [
+        {
+          "id": "horizontal-2",
+          "answer": 26
+        }
+      ],
+      "parameters": {
+        "barData": [
+          {
+            "game_id": "2020_06_GB_TB",
+            "team": "A",
+            "score": 38,
+            "true_percentage": "26",
+            "bin": "low",
+            "rand": "0.010822061",
+            "chartType": "Hbar"
+          },
+          {
+            "game_id": "2020_06_GB_TB",
+            "team": "B",
+            "score": 10,
+            "true_percentage": "26",
+            "bin": "low",
+            "rand": "0.010822061",
+            "chartType": "Hbar"
+          }
+        ]
+      }
+    },
+    "horizontal-bar-chart-3": {
+      "baseComponent": "horizontal-bar-chart",
+      "description": "A trial for the user to enter the difference between the bars",
+      "instruction": "Enter the percentage difference between the bars (rounded to the nearest whole number)",
+      "correctAnswer": [
+        {
+          "id": "horizontal-3",
+          "answer": 65
+        }
+      ],
+      "parameters": {
+        "barData": [
+          {
+            "game_id": "2021_02_LV_PIT",
+            "team": "A",
+            "score": 17,
+            "true_percentage": "65",
+            "bin": "medium",
+            "rand": "0.004675933",
+            "chartType": "Hbar"
+          },
+          {
+            "game_id": "2021_02_LV_PIT",
+            "team": "B",
+            "score": 26,
+            "true_percentage": "65",
+            "bin": "medium",
+            "rand": "0.004675933",
+            "chartType": "Hbar"
+          }
+        ]
+      }
+    },
+
+    "horizontal-bar-chart-4": {
+      "baseComponent": "horizontal-bar-chart",
+      "description": "A trial for the user to enter the difference between the bars",
+      "instruction": "Enter the percentage difference between the bars (rounded to the nearest whole number)",
+      "correctAnswer": [
+        {
+          "id": "horizontal-4",
+          "answer": 38
+        }
+      ],
+      "parameters": {
+        "barData": [
+          {
+            "game_id": "2018_03_NE_DET",
+            "team": "A",
+            "score": 26,
+            "true_percentage": "38",
+            "bin": "medium",
+            "rand": "0.00717197",
+            "chartType": "Hbar"
+          },
+          {
+            "game_id": "2018_03_NE_DET",
+            "team": "B",
+            "score": 10,
+            "true_percentage": "38",
+            "bin": "medium",
+            "rand": "0.00717197",
+            "chartType": "Hbar"
+          }
+        ]
+      }
+    },
+
+    "horizontal-bar-chart-5": {
+      "baseComponent": "horizontal-bar-chart",
+      "description": "A trial for the user to enter the difference between the bars",
+      "instruction": "Enter the percentage difference between the bars (rounded to the nearest whole number)",
+      "correctAnswer": [
+        {
+          "id": "horizontal-5",
+          "answer": 39
+        }
+      ],
+      "parameters": {
+        "barData": [
+          {
+            "game_id": "2023_14_PHI_DAL",
+            "team": "A",
+            "score": 33,
+            "true_percentage": "39",
+            "bin": "medium",
+            "rand": "0.01071795",
+            "chartType": "Hbar"
+          },
+          {
+            "game_id": "2023_14_PHI_DAL",
+            "team": "B",
+            "score": 13,
+            "true_percentage": "39",
+            "bin": "medium",
+            "rand": "0.01071795",
+            "chartType": "Hbar"
+          }
+        ]
+      }
+    },
+
+    "horizontal-bar-chart-6": {
+      "baseComponent": "horizontal-bar-chart",
+      "description": "A trial for the user to enter the difference between the bars",
+      "instruction": "Enter the percentage difference between the bars (rounded to the nearest whole number)",
+      "correctAnswer": [
+        {
+          "id": "horizontal-6",
+          "answer": 76
+        }
+      ],
+      "parameters": {
+        "barData": [
+          {
+            "game_id": "2018_15_HOU_NYJ",
+            "team": "A",
+            "score": 22,
+            "true_percentage": "76",
+            "bin": "high",
+            "rand": "0.005887911",
+            "chartType": "Hbar"
+          },
+          {
+            "game_id": "2018_15_HOU_NYJ",
+            "team": "B",
+            "score": 29,
+            "true_percentage": "76",
+            "bin": "high",
+            "rand": "0.005887911",
+            "chartType": "Hbar"
+          }
+        ]
+      }
+    },
+
+    "horizontal-bar-chart-7": {
+      "baseComponent": "horizontal-bar-chart",
+      "description": "A trial for the user to enter the difference between the bars",
+      "instruction": "Enter the percentage difference between the bars (rounded to the nearest whole number)",
+      "correctAnswer": [
+        {
+          "id": "horizontal-7",
+          "answer": 89
+        }
+      ],
+      "parameters": {
+        "barData": [
+          {
+            "game_id": "2022_11_CHI_ATL",
+            "team": "A",
+            "score": 27,
+            "true_percentage": "89",
+            "bin": "high",
+            "rand": "0.006225189",
+            "chartType": "Hbar"
+          },
+          {
+            "game_id": "2022_11_CHI_ATL",
+            "team": "B",
+            "score": 24,
+            "true_percentage": "89",
+            "bin": "high",
+            "rand": "0.006225189",
+            "chartType": "Hbar"
+          }
+        ]
+      }
     }
   },
   "sequence": {
@@ -269,13 +532,20 @@
         "id": "block_1",
         "order": "random",
         "components": [
-        "vertical-bar-chart-1",
-        "vertical-bar-chart-2",
-        "vertical-bar-chart-3",
-        "vertical-bar-chart-4",
-        "vertical-bar-chart-5",
-        "vertical-bar-chart-6",
-        "vertical-bar-chart-7"
+          "vertical-bar-chart-1",
+          "vertical-bar-chart-2",
+          "vertical-bar-chart-3",
+          "vertical-bar-chart-4",
+          "vertical-bar-chart-5",
+          "vertical-bar-chart-6",
+          "vertical-bar-chart-7",
+          "horizontal-bar-chart-1",
+          "horizontal-bar-chart-2",
+          "horizontal-bar-chart-3",
+          "horizontal-bar-chart-4",
+          "horizontal-bar-chart-5",
+          "horizontal-bar-chart-6",
+          "horizontal-bar-chart-7"
         ]
       }
     ]
