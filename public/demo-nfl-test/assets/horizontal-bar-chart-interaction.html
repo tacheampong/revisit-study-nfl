@@ -6,6 +6,14 @@
     <script src="https://d3js.org/d3.v7.js"></script>
     <!-- Load revisit-communicate to be able to send data to reVISit -->
     <script src="../../revisitUtilities/revisit-communicate.js"></script>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
   </head>
 
   <body>
@@ -45,7 +53,7 @@
         .attr("fill", "white");
 
     const x = d3.scaleLinear()
-        .domain([0, d3.max(low_2, (d) => Number(d.score)) + 10])
+        .domain([0, 50])
         .range([0, width]);
 
     const y = d3.scaleBand()
