@@ -32,13 +32,11 @@
     const svg = d3
         .select("svg")
         .attr("width", width + marginLeft + marginRight)
-        .attr("height", height + marginTop + marginBottom)
-        .attr("transform", "translate(100,0)");
+        .attr("height", height + marginTop + marginBottom);
 
     svg.selectAll("*").remove();
 
-    const chart = svg
-        .append("g")
+    const chart = svg.append("g")
         .attr("transform", `translate(${marginLeft}, ${marginTop})`);
 
     chart.append("rect")
@@ -79,17 +77,13 @@
         // Ticks and labels
         .attr("transform", `translate(0, ${height})`)
         .call(d3.axisBottom(x).tickValues([0,5, 10, 15, 20, 25, 30, 35, 40, 45, 50]).tickSizeOuter(0),
-        )
-
-        // Title
-        .call(g => g.append("text")
-            .attr("fill", "#000")
-            .attr("x", width / 2)
-            .attr("y", 50)
-            .attr("text-anchor", "middle")
-            .attr("font-size", 20)
-            .text("Score"),
         );
+
+    // X-axis Title
+    svg.append("text")
+        .text("Score")
+        .attr("transform", "translate(" + (marginLeft + width / 2) + "," + (marginTop + height + 50) + ")")
+        .attr("text-anchor", "middle");
 
     // Y-axis
     chart.append("g")
@@ -98,15 +92,12 @@
 
 
         // Title
-        .call(g => g.append("text")
-            .attr("fill", "#000")
-            .attr("transform", "rotate(-90)")
-            .attr("x", -height / 2)
-            .attr("y", -50)
-            .attr("text-anchor", "middle")
-            .attr("font-size", 20)
-            .text("Team"),
-        );
+    svg.append("text")
+        .text("Team")
+        .attr(
+          "transform",
+          "translate(" + (marginLeft / 2) + "," + (marginTop + height / 2) + ") rotate(-90)")
+        .attr("text-anchor", "middle");
     });
   </script>
 </html>
