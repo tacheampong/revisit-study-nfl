@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>D3 Nice Axes (Horizontal Bar Chart)</title>
+    <script src="https://d3js.org/d3.v7.js"></script>
+    <!-- Load revisit-communicate to be able to send data to reVISit -->
+    <script src="../../revisitUtilities/revisit-communicate.js"></script>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <svg></svg>
+  </body>
+
+  <script>
+    // Get data from the config file
+    Revisit.onDataReceive((data) => {
+      const low_2 = data["barData"];
+      const taskID = "barChart";
+      const loc = "belowStimulus";
+
+    // Used https://observablehq.com/@d3/horizontal-bar-chart/2 for reference on horizontal bar charts
+    // chart dimensions
+    const marginTop = 20;
+    const marginRight = 20;
+    const marginBottom = 60;
+    const marginLeft = 60;
+    const width = 400 - marginLeft - marginRight;
+    const height = 400 - marginTop - marginBottom;
+
+    // Add an SVG
+    const svg = d3
+        .select("svg")
+        .attr("width", width + marginLeft + marginRight)
+        .attr("height", height + marginTop + marginBottom);
+
+    svg.selectAll("*").remove();
+
+    const chart = svg.append("g")
+        .attr("transform", `translate(${marginLeft}, ${marginTop})`);
+
+    chart.append("rect")
+        .attr("width", width)
+        .attr("height", height)
+        .attr("fill", "white");
+
+    const x = d3.scaleLinear()
+        .domain([0, 50])
+        .range([0, width]);
+
+    const y = d3.scaleBand()
+        .domain(low_2.map((d) => d.team))
+        .range([0, height])
+        .padding(0.2);
+
+    chart.append("g")
+        .selectAll("rect")
+        .data(low_2)
+        .join("rect")
+        .attr("x", 0)
+        .attr("y", (d)=>y(d.team))
+        .attr("width", (d)=>x(Number(d.score)))
+        .attr("height", y.bandwidth())
+        .attr("fill", "#ffffff")
+        .attr("stroke-width", 1)
+        .attr("stroke", "black")
+            
+            // Post answer from the html to reVISit platform
+        .on("click", (e, d) => {
+          Revisit.postAnswers({
+            [taskID]: d,
+          });
+        });
+
+    // X-axis
+    chart.append("g")
+        // Ticks and labels
+        .attr("transform", `translate(0, ${height})`)
+        .call(d3.axisBottom(x).tickValues([0,5, 10, 15, 20, 25, 30, 35, 40, 45, 50]).tickSizeOuter(0),
+        );
+
+    // X-axis Title
+    svg.append("text")
+        .text("Score")
+        .attr("transform", "translate(" + (marginLeft + width / 2) + "," + (marginTop + height + 50) + ")")
+        .attr("text-anchor", "middle");
+
+    // Y-axis
+    chart.append("g")
+        // Ticks and labels
+        .call(d3.axisLeft(y).tickSize(0))
+
+
+        // Title
+    svg.append("text")
+        .text("Team")
+        .attr(
+          "transform",
+          "translate(" + (marginLeft / 2) + "," + (marginTop + height / 2) + ") rotate(-90)")
+        .attr("text-anchor", "middle");
+    });
+  </script>
+</html>
