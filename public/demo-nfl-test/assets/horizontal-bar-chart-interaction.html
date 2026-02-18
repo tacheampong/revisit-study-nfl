@@ -32,13 +32,14 @@
     const svg = d3
         .select("svg")
         .attr("width", width + marginLeft + marginRight)
-        .attr("height", height + marginTop + marginBottom);
+        .attr("height", height + marginTop + marginBottom)
+        .attr("transform", "translate(100,0)");
 
     svg.selectAll("*").remove();
 
     const chart = svg
         .append("g")
-        .attr("transform", `translate(${marginLeft + 100}, ${marginTop})`);
+        .attr("transform", `translate(${marginLeft}, ${marginTop})`);
 
     chart.append("rect")
         .attr("width", width)
@@ -47,33 +48,31 @@
 
     const x = d3.scaleLinear()
         .domain([0, d3.max(low_2, (d) => Number(d.score)) + 10])
-        .range([height, 0]);
+        .range([0, width]);
 
     const y = d3.scaleBand()
         .domain(low_2.map((d) => d.team))
-        .range([0, width])
+        .range([0, height])
         .padding(0.2);
 
     chart.append("g")
-            .attr("fill", "none")
-            .attr("stroke", "black")
         .selectAll("rect")
         .data(low_2)
         .join("rect")
-            .attr("x", 0)
-            .attr("y", (d)=>y(d.team))
-            .attr("width", (d)=>x(Number(d.score)))
-            .attr("height", y.bandwidth())
-            .attr("fill", "#ffffff")
-            .attr("stroke-width", 1)
-            .attr("stroke", "black")
+        .attr("x", 0)
+        .attr("y", (d)=>y(d.team))
+        .attr("width", (d)=>x(Number(d.score)))
+        .attr("height", y.bandwidth())
+        .attr("fill", "#ffffff")
+        .attr("stroke-width", 1)
+        .attr("stroke", "black")
             
             // Post answer from the html to reVISit platform
-            .on("click", (e, d) => {
-              Revisit.postAnswers({
-                [taskID]: d,
-              });
-            });
+        .on("click", (e, d) => {
+          Revisit.postAnswers({
+            [taskID]: d,
+          });
+        });
 
     // X-axis
     chart.append("g")
@@ -85,17 +84,18 @@
         // Title
         .call(g => g.append("text")
             .attr("fill", "#000")
-            .attr("x", (width / 2)
+            .attr("x", width / 2)
             .attr("y", 50)
             .attr("text-anchor", "middle")
             .attr("font-size", 20)
             .text("Score"),
-        ));
+        );
 
     // Y-axis
     chart.append("g")
         // Ticks and labels
         .call(d3.axisLeft(y).tickSize(0))
+
 
         // Title
         .call(g => g.append("text")
