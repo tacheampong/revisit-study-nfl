@@ -43,6 +43,19 @@
       ],
       "path": "demo-nfl-test/assets/horizontal-bar-chart-interaction.html",
       "instructionLocation": "aboveStimulus"
+    },
+    "pie-chart": {
+      "type": "website",
+      "response": [
+        {
+          "id": "pieChart",
+          "prompt": "Type your answer:",
+          "location": "belowStimulus",
+          "type": "numerical"
+        }
+      ],
+      "path": "demo-nfl-test/assets/pie-chart-interaction.html",
+      "instructionLocation": "aboveStimulus"
     }
   },
   "components": {
@@ -522,6 +535,242 @@
           }
         ]
       }
+    },
+    "pie-chart-1": {
+      "baseComponent": "pie-chart",
+      "description": "A trial for the user to enter the difference between the slices",
+      "instruction": "Enter the percentage difference between the slices (rounded to the nearest whole number)",
+      "correctAnswer": [
+        {
+          "id": "pie-1",
+          "answer": 11
+        }
+      ],
+      "parameters": {
+        "barData": [
+          {
+            "game_id": "2023_03_TEN_CLE",
+            "team": "A",
+            "score": 27,
+            "true_percentage": "11",
+            "bin": "low",
+            "rand": "0.018378846",
+            "chartType": "Pie"
+          },
+          {
+            "game_id": "2023_03_TEN_CLE",
+            "team": "B",
+            "score": 3,
+            "true_percentage": "11",
+            "bin": "low",
+            "rand": "0.018378846",
+            "chartType": "Pie"
+          }
+        ]
+      }
+    },
+
+    "pie-chart-2": {
+      "baseComponent": "pie-chart",
+      "description": "A trial for the user to enter the difference between the slices",
+      "instruction": "Enter the percentage difference between the slices (rounded to the nearest whole number)",
+      "correctAnswer": [
+        {
+          "id": "pie-2",
+          "answer": 12
+        }
+      ],
+      "parameters": {
+        "barData": [
+          {
+            "game_id": "2021_07_CAR_NYG",
+            "team": "A",
+            "score": 25,
+            "true_percentage": "12",
+            "bin": "low",
+            "rand": "0.020984692",
+            "chartType": "Pie"
+          },
+          {
+            "game_id": "2021_07_CAR_NYG",
+            "team": "B",
+            "score": 3,
+            "true_percentage": "12",
+            "bin": "low",
+            "rand": "0.020984692",
+            "chartType": "Pie"
+          }
+        ]
+      }
+    },
+    "pie-chart-3": {
+      "baseComponent": "pie-chart",
+      "description": "A trial for the user to enter the difference between the slices",
+      "instruction": "Enter the percentage difference between the slices (rounded to the nearest whole number)",
+      "correctAnswer": [
+        {
+          "id": "pie-3",
+          "answer": 32
+        }
+      ],
+      "parameters": {
+        "barData": [
+          {
+            "game_id": "2023_15_DAL_BUF",
+            "team": "A",
+            "score": 31,
+            "true_percentage": "32",
+            "bin": "medium",
+            "rand": "0.012388643",
+            "chartType": "Pie"
+          },
+          {
+            "game_id": "2023_15_DAL_BUF",
+            "team": "B",
+            "score": 10,
+            "true_percentage": "32",
+            "bin": "medium",
+            "rand": "0.012388643",
+            "chartType": "Pie"
+          }
+        ]
+      }
+    },
+
+    "pie-chart-4": {
+      "baseComponent": "pie-chart",
+      "description": "A trial for the user to enter the difference between the slices",
+      "instruction": "Enter the percentage difference between the slices (rounded to the nearest whole number)",
+      "correctAnswer": [
+        {
+          "id": "pie-4",
+          "answer": 47
+        }
+      ],
+      "parameters": {
+        "barData": [
+          {
+            "game_id": "2020_06_DET_JAX",
+            "team": "A",
+            "score": 16,
+            "true_percentage": "47",
+            "bin": "medium",
+            "rand": "0.012504785",
+            "chartType": "Pie"
+          },
+          {
+            "game_id": "2020_06_DET_JAX",
+            "team": "B",
+            "score": 34,
+            "true_percentage": "47",
+            "bin": "medium",
+            "rand": "0.012504785",
+            "chartType": "Pie"
+          }
+        ]
+      }
+    },
+
+    "pie-chart-5": {
+      "baseComponent": "pie-chart",
+      "description": "A trial for the user to enter the difference between the slices",
+      "instruction": "Enter the percentage difference between the slices (rounded to the nearest whole number)",
+      "correctAnswer": [
+        {
+          "id": "pie-5",
+          "answer": 55
+        }
+      ],
+      "parameters": {
+        "barData": [
+          {
+            "game_id": "2022_18_NYJ_MIA",
+            "team": "A",
+            "score": 11,
+            "true_percentage": "55",
+            "bin": "medium",
+            "rand": "0.018195396",
+            "chartType": "Pie"
+          },
+          {
+            "game_id": "2022_18_NYJ_MIA",
+            "team": "B",
+            "score": 6,
+            "true_percentage": "55",
+            "bin": "medium",
+            "rand": "0.018195396",
+            "chartType": "Pie"
+          }
+        ]
+      }
+    },
+
+    "pie-chart-6": {
+      "baseComponent": "pie-chart",
+      "description": "A trial for the user to enter the difference between the slices",
+      "instruction": "Enter the percentage difference between the slices (rounded to the nearest whole number)",
+      "correctAnswer": [
+        {
+          "id": "pie-6",
+          "answer": 85
+        }
+      ],
+      "parameters": {
+        "barData": [
+          {
+            "game_id": "2023_06_DAL_LAC",
+            "team": "A",
+            "score": 17,
+            "true_percentage": "85",
+            "bin": "high",
+            "rand": "0.006317279",
+            "chartType": "Pie"
+          },
+          {
+            "game_id": "2023_06_DAL_LAC",
+            "team": "B",
+            "score": 20,
+            "true_percentage": "85",
+            "bin": "high",
+            "rand": "0.006317279",
+            "chartType": "Pie"
+          }
+        ]
+      }
+    },
+
+    "pie-chart-7": {
+      "baseComponent": "pie-chart",
+      "description": "A trial for the user to enter the difference between the slices",
+      "instruction": "Enter the percentage difference between the slices (rounded to the nearest whole number)",
+      "correctAnswer": [
+        {
+          "id": "pie-7",
+          "answer": 90
+        }
+      ],
+      "parameters": {
+        "barData": [
+          {
+            "game_id": "2018_02_DET_SF",
+            "team": "A",
+            "score": 30,
+            "true_percentage": "90",
+            "bin": "high",
+            "rand": "0.006921714",
+            "chartType": "Pie"
+          },
+          {
+            "game_id": "2018_02_DET_SF",
+            "team": "B",
+            "score": 27,
+            "true_percentage": "90",
+            "bin": "high",
+            "rand": "0.006921714",
+            "chartType": "Pie"
+          }
+        ]
+      }
     }
   },
   "sequence": {
@@ -545,7 +794,14 @@
           "horizontal-bar-chart-4",
           "horizontal-bar-chart-5",
           "horizontal-bar-chart-6",
-          "horizontal-bar-chart-7"
+          "horizontal-bar-chart-7",
+          "pie-chart-1",
+          "pie-chart-2",
+          "pie-chart-3",
+          "pie-chart-4",
+          "pie-chart-5",
+          "pie-chart-6",
+          "pie-chart-7"
         ]
       }
     ]
