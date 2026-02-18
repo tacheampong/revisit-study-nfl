@@ -32,14 +32,13 @@
     const svg = d3
         .select("svg")
         .attr("width", width + marginLeft + marginRight)
-        .attr("height", height + marginTop + marginBottom)
-        .attr("transform", "translate(100,0)");
+        .attr("height", height + marginTop + marginBottom);
 
     svg.selectAll("*").remove();
 
     const chart = svg
         .append("g")
-        .attr("transform", `translate(${marginLeft}, ${marginTop})`);
+        .attr("transform", `translate(${marginLeft + 100}, ${marginTop})`);
 
     chart.append("rect")
         .attr("width", width)
