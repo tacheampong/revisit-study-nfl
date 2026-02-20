@@ -4,26 +4,26 @@
 
 **Experiment Images:**
 
-![Experiment Images](image.png)
+![Experiment Images](results/img/Survey_Start.png)
 
 This is the survey welcome page that a participant sees right before they press the blue “Go to Study” button to start our survey.
 
-![Introduction](image-1.png)
+![Introduction](results/img/Introduction_Example.png)
 
 This is the introduction/rules page that participants see once starting the survey, but right before they start answering questions.
 
 
 The next 3 images are the different types of charts we made. The blue bar is full as the survey is completed, but when a participant is doing the survey, the bar fills in as they go further along. The participant answers by typing in the text box and then pressing the next button to move on.
 
-![Vertical Bar Chart](image-2.png)
+![Vertical Bar Chart](results/img/Vertical_Bar_Chart_Example.png)
 
 This is one of the Vertical Bar Charts we have made.
 
-![Horizontal Bar Chart](image-3.png)
+![Horizontal Bar Chart](results/img/Horizontal_Bar_Chart_Example.png)
 
 This is one of the Horizontal Bar Charts we have made.
 
-![Pie Chart](image-4.png)
+![Pie Chart](results/img/Pie_Chart_Example.png)
 
 This is one of the Pie Charts we have made.
 
@@ -32,7 +32,7 @@ This is one of the Pie Charts we have made.
 
 **Log Loss Average Visualization**
 
-![Loss Average](image-5.png)
+![Loss Average](results/img/Loss_Average_Chart.png)
 
 Image of each average log loss for each chart type.
 
@@ -43,7 +43,7 @@ Based on the visualization we can see there is a marginal difference between hor
 
 **Mean Log2 Error Visualization**
 
-![Mean Log2 Error](image-6.png)
+![Mean Log2 Error](results/img/mean_log2error_chart.png)
 
 Image of the mean log2 error for each visualization type, with the dot being the mean and the error bars displaying the lower and upper error bounds.
 
@@ -54,7 +54,7 @@ The results from this visualization indicate clear differences in perceptual acc
 
 **Estimated vs Correct Percentage Visualization**
 
-![Estimated vs Correct Percentage](image-7.png)
+![Estimated vs Correct Percentage](results/img/Scatterplot.png)
 
 Image of each answer color coded by chart type and filterable by participant ID.
 
